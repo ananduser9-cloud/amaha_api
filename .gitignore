@@ -1,0 +1,42 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore log and temp files
+/log/*
+/tmp/*
+/tmp/
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore database files (if using sqlite)
+*.sqlite3
+*.sqlite3-journal
+
+# Ignore environment-specific config
+.env
+.env.*.local
+
+# Ignore node modules (if using Webpacker/JS)
+node_modules/
+
+# Ignore Byebug history file
+.byebug_history
+
+# Ignore system-specific files
+.DS_Store
+*.swp
+*.swo
+
+# Ignore coverage reports
+coverage/
+
+# Ignore secret keys and credentials
+config/master.key
+config/credentials/*.key
+
+# Ignore vendor cache
+/vendor/bundle
