@@ -34,7 +34,7 @@ module Customers
           invalid_lines << idx
         end
       end
-      sorted_customers = customers.sort_by{ |customer| customer["id"] }
+      sorted_customers = customers.sort_by{ |customer| customer["id"].to_i }
       Result.new(sorted_customers, invalid_lines)
     end
   end
